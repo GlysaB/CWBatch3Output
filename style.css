@@ -1,0 +1,12 @@
+.datepicker-date-display{
+
+    background-color: rgb(206, 23, 166);
+    color:aliceblue
+    padding: 40px 40px;
+    font-weight:  1000;
+}
+
+timepicker-time-display{
+
+    background-color: rgb(206, 23, 166);
+}

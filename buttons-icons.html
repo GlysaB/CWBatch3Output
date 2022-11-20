@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Buttons & Icons</title>
+</head>
+<body class="grey darken-4">
+    <div class="navbar-fixed">
+        <nav class="pink">
+            <div class="container">
+            <div class="nav wrapper">
+            <a href="" class="brand-logo">Bucketlist.PH</a>
+            <ul id="nav-mobile" class="right hide-on-small-only">
+        <li class="active">
+            <a href="" class="">Home</a>
+        </li>
+        <li><a href="" class="">Feautures</a>
+        </li>
+        <li><a href="" class="">About Us</a>
+        </li>
+        <a href="!#" class="dropdown-trigger"
+        data-target="dropdown1">
+        <i class="material-icons">arrow_drop_down</i>
+    </a>
+        </li>
+            </ul>
+        
+            </div>
+        </div>
+        </nav>
+    </div>
+    
+    <!-- drop down structure-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Help & FAQS</a></li>
+        <li><a href="#!">Blog & News</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Contact Us</a></li>
+        </ul>
+    
+
+
+    <div class="container">
+        <h1 class="lime-text">Buttons & Icons</h1>
+        <a class="waves-effect waves-light btn purple darken-3">Button</a>
+        <a class="waves-effect waves-light btn amber light-3">
+        <i class="material-icons left">cloud</i>
+            Button
+        </a>
+        <br><br>
+
+        <a class="waves-effect waves-light btn pink accent-3">
+        <i class="material-icons right">cloud</i>
+            Button
+        </a>
+        <a class="btn-floating btn-large waves-effect waves-light indigo">
+            <i class="material-icons">add</i></a>
+        
+            <br><br>
+        <a href="" class="waves-effect waves-red darken-3 btn-flat lime accent-1">Button</a>
+
+        <button class="btn light green accent-4 waves-effect waves-light" type="submit"name="action">
+            <i class="material-icons right">send</i>
+
+            Submit</button>
+
+            <br><br>
+        
+            <a class="waves-effect waves-light btn-large teal accent-1 red-text">Button</a>
+            <a class="waves-effect waves-light btn-large teal accent-2 red-text">
+                <i class="material-icons left">cloud</i>button</a>
+            <a class="waves-effect waves-light btn-large teal accent-3 red-text">
+                <i class="material-icons right">cloud</i>button</a>
+        
+            <br><br> 
+
+            <a class="waves-effect waves-light btn-small green accent-2 indigo-text">Button</a>
+            <a class="waves-effect waves-light btn-small green accent-3 indigo-text">
+                <i class="material-icons left">cloud</i>button</a>
+            <a class="waves-effect waves-light btn-small green accent-4 indigo-text">
+                <i class="material-icons right">cloud</i>button</a>
+                
+                <br><br> 
+
+                <a class="btn-large disabled">Button</a>
+                <a class="btn disabled">Button</a>
+                <a class="btn-flat disabled">Button</a>
+                <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+        
+    </div>
+
+<!--Fixed Action -->
+    <div class="fixed-action-btn ">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">mode_edit</i>
+
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red" href="index.html">
+                    <i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1" href="https://materializecss.com/floating-action-button.html">
+                <i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green" href="https://www.youtube.com/watch?v=quKu5_HCzxI">
+                <i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue" href="https://www.facebook.com/groups/1269785773531799/user/100063919175715/">
+                <i class="material-icons">attach_file</i></a></li>
+            </li>
+        </ul>
+    </div>
+    <div style="height:2000px"></div>
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script>
+        $(document).ready(function(){
+            //Init Dropdown
+            $(".dropdown-trigger").dropdown();
+            //Init Fixed action button
+            $('.fixed-action-btn').floatingActionButton({
+                direction: 'left',
+                hoverEnabled: false,
+                toolbarEnable: true
+            });
+        });
+    </script>
+</body>
+</html>
