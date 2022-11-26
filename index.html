@@ -425,54 +425,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
     <script>
-        $(document).ready(function(){
-            //Init Dropdown
-            $(".dropdown-trigger").dropdown();
-            //Init Fixed action button
-            $('.fixed-action-btn').floatingActionButton({
-                direction: 'left',
-                hoverEnabled: false,
-                toolbarEnable: true
-                
-            });
-        });
-        $(document).ready(function(){
-    
-            //tabs
-        $('.tabs').tabs();
-    
-        //materialbox
-        $('.materialboxed').materialbox();
-    
-         //Slider Init
-        $('.slider').slider({
-            height: 500,
-            duration: 100,
-        });
-        //Parallax Init
-        $('.parallax').parallax(); 
-        //Scrollspy Init
-        $('.scrollspy').scrollspy();
-    
-        //Sidenav Init
-        $('.sidenav').sidenav(   
-        );
-        });
-        
-    
-        $(document).ready(function(){
-            //datepicker Init
-        $('.datepicker').datepicker({
-            autoClose: true
-        });
-        //timepicker Init
-        $('.timepicker').timepicker();
-        //Chip Init
-        $('.chips').chips();
-        $('.chips-initial').chips({
+    $(document).ready(function(){
+    //Sidenav
+    $('.sidenav').sidenav();
+    //Date Picker
+    $('.datepicker').datepicker();
+    //timepicker
+    $('.timepicker').timepicker();
+    //ScrollSpy
+    $('.scrollspy').scrollSpy();
+    //Materialbox
+    $('.materialboxed').materialbox();
+    //Dropdown
+    $('.dropdown-trigger').dropdown();
+    //Slider
+    $('.slider').slider();
+    //Parallax
+    $('.parallax').parallax();
+
+    //Chips
+    $('.chips').chips();
+    $('.chips-initial').chips({
+    data: [{
+        tag: 'Apple',
+    }, {
+        tag: 'Microsoft',
+    }, {
+        tag: 'Google',
+    }],
     });
-    
-        });
+    $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+    });
+    $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+        data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+        },
+        limit: Infinity,
+        minLength: 1
+    }
+    });
+
+});
         
     </script>
         
